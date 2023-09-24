@@ -12,7 +12,8 @@ Open the project and find it yourself
 
 ## Getting Started
 
-This website does not serve any real life purpose it is just a waste of time for people who opens it ,specially for the person who created it 
+This website does not serve any real life purpose it is just a waste of time for people who opens it ,specially for the person who created it by the wawy if you dont know the person its me
+
 
 ## Usage
 
