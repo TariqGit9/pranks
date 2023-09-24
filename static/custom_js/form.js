@@ -29,7 +29,7 @@
       e.preventDefault(); // Prevent the paste action
       Swal.fire(
         'Come on bro...',
-        'Where is the fun it that ?',
+        'Where is the fun in that ?',
         'question'
       )
   });
