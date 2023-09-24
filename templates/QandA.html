@@ -1,0 +1,62 @@
+{% extends 'template.html' %}
+{% block main %}
+<!-- partial -->
+<div class="main-panel">
+  <div class="content-wrapper">
+    <div class="page-header">
+      <h3 class="page-title">
+        <span class="page-title-icon bg-gradient-primary text-white me-2">
+          <i class="mdi mdi-comment-question-outline"></i>
+        </span>QnA
+      </h3>
+      <button type="button" class="btn btn-gradient-info btn-lg btn-block ask-question">Ask a question <i class="mdi mdi-comment-question float-right"></i>
+      </button>
+    </div>
+    <div class="col-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Q : How much free time did the developer had when creating this website?</h4>
+            <p><strong> Answer :  </strong>  Yes.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Q :What's the point of this website?</h4>
+            <p><strong> Answer :  </strong> This website doesn't really have a point, just like the developer's life. It's here to be funny and playful, without any serious purpose.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Q : What happens when you successfully press the 'Click Me' button on the web browser?</h4>
+            <p><strong> Answer :  </strong>  When you successfully press the 'Click Me' button, it's said that a cosmic alignment occurs, and for a brief moment, the universe whispers the secret of life's purpose into your ear. So, you could say, your purpose of life will be completed, but only for that fleeting instant.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Q : But why?</h4>
+            <p><strong> Answer :  </strong>  Sometimes i also ask my self the same question.
+            </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<!-- main-panel ends -->
+
+
+{% endblock %}
+
+{% block js %}
+<script src="static/custom_js/qna.js"></script>
+{% endblock %}
