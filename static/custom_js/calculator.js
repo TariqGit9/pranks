@@ -25,14 +25,27 @@ $('.subinput').on('input', function () {
 $(document).on('click', '.guess-value', function() {
   var guessnumber = parseInt($('#guessnumber').val()) || 0;
   if(guessnumber==0){
-    alert('add a number')
+    Swal.fire({
+      icon: 'warning',
+      title: 'Please enter a number from',
+      text: '1-10',
+    })
     return
   }
   if (guessnumber >= 1 && guessnumber <= 10) {
       // Number is within the range 1-10
-      alert(Math.floor(Math.random() * 11) + 10)
+      var num= Math.floor(Math.random() * 11) + 10
+      Swal.fire(
+        'You guessed !',
+        'Number ' + num,
+        'success'
+      )
       return
   }else{
-    alert('numbers must be betwween 1-10')
+    Swal.fire({
+      icon: 'warning',
+      title: 'Please enter number from ',
+      text: '1-10',
+    })
   }
 });

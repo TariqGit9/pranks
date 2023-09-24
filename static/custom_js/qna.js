@@ -38,5 +38,9 @@ var lazyResponses = [
 $(document).on('click', '.ask-question', function() {
 var randomResponse = lazyResponses[Math.floor(Math.random() * lazyResponses.length)];
 
-alert(randomResponse)
+Swal.fire({
+    icon: 'info',
+    title: 'Sorry...',
+    text: randomResponse,
+  })
 });

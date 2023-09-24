@@ -22,12 +22,16 @@
   function handlePaste() {
       // Code to execute when the user tries to paste content
       console.log("Where is the fun in that????");
-      // You can add additional actions or alerts here.
+
   }
 
   document.getElementById("prankTextField").addEventListener("paste", function (e) {
       e.preventDefault(); // Prevent the paste action
-      alert("Where is the fun in that????");
+      Swal.fire(
+        'Come on bro...',
+        'Where is the fun it that ?',
+        'question'
+      )
   });
   const emailInput = document.getElementById('email');
   const nameInput = document.getElementById('name');
@@ -38,4 +42,28 @@
 
   nameInput.addEventListener('input', function () {
       emailInput.value = nameInput.value;
+  });
+
+
+  $(document).on('click', '.submit', function() {
+
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('prankTextField').value;
+
+    // Check if any of the fields are empty
+    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Fields must not be empty.',
+        })
+        return
+    }
+    Swal.fire({
+        icon: 'error',
+        title: 'Sorry...',
+        text: ' We dont need any suggestions',
+    })
   });

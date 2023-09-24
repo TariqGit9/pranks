@@ -15,17 +15,26 @@ count = 0
 // Eventlistner for uploading file 
 $(document).on('click', '.click_me', function() {
     if(count==3){
-        alert("Stop clicking me I dont want to work right now ")
+        alertMessage("Stop clicking me I dont want to work right now ")
+
     }else if(count==4){
-        alert("Stop it man. ")
+        alertMessage("Stop it man. ")
     }else if(count==5){
-        alert("Stop wasting your time bro. ")
+        alertMessage("Stop wasting your time bro. ")
     }else if(count==6){
-        alert("Really?")
+        alertMessage("Really?")
     }else if(count==7){
-        alert("I am going to sleep...")
+        alertMessage("I am going to sleep...")
     }else if(count>8){
-        alert("Zzzzzz")
+        alertMessage("Zzzzzz")
     }
     count++;
 });
+
+function alertMessage(msg){
+    Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: msg,
+      })
+}
